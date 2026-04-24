@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read customer reviews for HiEndCars Hyderabad. See why premium car owners trust us for their luxury car repairs, denting, and painting.">
+    <title>Customer Reviews | HiEndCars - Trusted Luxury Car Workshop Hyderabad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Website Icon-->
+    <link rel="icon" type="image/png" href="Images/car.png">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="HiEndCars Logo"
+                    onerror="this.src=''; this.alt='HiEndCars'; this.className='logo-text';">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 150px;">
+        <div class="hero-overlay"></div>
+        <img src="Images/hero_bg.webp" alt="Client Reviews" class="hero-bg">
+        <div class="hero-content text-center fade-up">
+            <h1 class="hero-title">Client <span class="text-accent">Reviews</span></h1>
+            <p class="hero-subtitle">Real feedback from our premium car community.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Hi End Car saved my time of taking quotations from different service centers
+                        for my car service and provided exact prices on the site. They didn't charge a penny extra for
+                        the service and did a quality job with my Duster. Probably the most transparent car service in
+                        town."</p>
+                    <div class="client-profile">
+                        <img src="Images/rahul.jpg" alt="Rahul" class="client-img"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\'><circle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%23d4af37\'/><text x=\'25\' y=\'32\' font-family=\'Arial\' font-size=\'20\' fill=\'black\' text-anchor=\'middle\'>R</text></svg>'">
+                        <div class="client-info">
+                            <strong>Rahul</strong>
+                            <span>Renault Duster</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"For someone like me who knows nothing about cars, it's very difficult to get
+                        my car service done. A friend suggested me Hi End Car and I tried it for my Honda City's
+                        service. All I had to do was book the car service online and they took care of everthing else.
+                        Quiet impressed with their service!"</p>
+                    <div class="client-profile">
+                        <img src="Images/neetu.jpg" alt="Neetu" class="client-img"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\'><circle cx=\'25\' cy=\'25\' r=\'25\' fill=\'%23d4af37\'/><text x=\'25\' y=\'32\' font-family=\'Arial\' font-size=\'20\' fill=\'black\' text-anchor=\'middle\'>N</text></svg>'">
+                        <div class="client-info">
+                            <strong>Neetu</strong>
+                            <span>Honda City</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Review -->
+                <div class="testimonial-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Got my Mercedes repainted here. The finish is absolute factory spec. Highly
+                        recommend HiEndCars for anyone in Hyderabad."</p>
+                    <div class="client-info">
+                        <strong>Siddharth M.</strong>
+                        <span>Mercedes E-Class</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                 <p>Rated 4.9/5 on Google Maps based on 500+ reviews.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">HiEnd<span class="text-accent">Cars</span></h3>
+                    <p class="footer-desc">Hyderabad's trusted premium workshop for luxury and premium cars. Unmatched
+                        quality and service.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="insurance-claims.html">Insurance Claims</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hiendcars.in/" aria-label="Instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/hiend.cars" aria-label="Facebook" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HiEndCars, Hyderabad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

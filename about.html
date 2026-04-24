@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn more about HiEndCars, Hyderabad's premier luxury car repair workshop. Over 15 years of excellence in servicing BMW, Audi, Mercedes, and more.">
+    <title>About Us | HiEndCars - Premium Luxury Car Workshop Hyderabad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Website Icon-->
+    <link rel="icon" type="image/png" href="Images/car.png">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="HiEndCars Logo"
+                    onerror="this.src=''; this.alt='HiEndCars'; this.className='logo-text';">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh; padding-top: 150px;">
+        <div class="parallax-elements">
+            <div class="parallax-blob blob-1"></div>
+            <div class="parallax-blob blob-2"></div>
+            <div class="parallax-blob blob-3"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <img src="Images/hero_bg.webp" alt="About HiEndCars" class="hero-bg">
+        <div class="hero-content text-center fade-up">
+            <h1 class="hero-title">Our <span class="text-accent">Story</span></h1>
+            <p class="hero-subtitle">Engineering excellence and trust since inception.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper fade-up">
+                <div>
+                    <h2 class="section-title">Our <span class="text-accent">Story</span></h2>
+                    <p class="mb-4">Founded in the heart of Hyderabad, HiEndCars was born out of a passion for luxury automobiles and a realization that premium cars deserve a level of care that ordinary workshops simply cannot provide.</p>
+                    <p class="mb-4">For over 15 years, we have been the trusted partners for thousands of luxury car owners. Our facility in Jubilee Hills is equipped with the same diagnostic tools and equipment used by official dealerships, but with a more personalized, transparent, and cost-effective approach.</p>
+                    <p>Whether it's a minor dent or a complete engine overhaul, our team of certified technicians treats every vehicle with the utmost precision and respect.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 class="text-accent mb-3">Our Mission</h3>
+                    <p>To provide Hyderabad's luxury car community with a reliable, transparent, and premium alternative to dealership servicing, focused on quality craftsmanship and customer trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="contact-wrapper fade-up">
+                <div class="founder-img-wrapper">
+                    <img src="Images/fouder.jpg" alt="Founder of HiEndCars" class="founder-img" style="width: 100%; border-radius: 8px; border: 1px solid var(--accent);">
+                </div>
+                <div>
+                    <h2 class="section-title">The <span class="text-accent">Visionary</span> Behind HiEndCars</h2>
+                    <p class="mb-4">With over two decades of experience in the automotive industry, our founder established HiEndCars with a single goal: to redefine luxury car service in Hyderabad.</p>
+                    <p class="mb-4">"I believe that a luxury car is not just a mode of transport; it's an emotion. Our workshop is built on the foundation of transparency and craftsmanship, ensuring every customer feels confident in the care their vehicle receives."</p>
+                    <h3 class="text-accent">Sudhir Kumar</h3>
+                    <p class="text-muted">Founder & Managing Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us section bg-dark">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Why Trust <span class="text-accent">Us?</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Authentic Parts</h3>
+                    <p class="feature-desc">We use only genuine OEM parts and high-grade imported materials.</p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-icon">💎</div>
+                    <h3 class="feature-title">Expertise</h3>
+                    <p class="feature-desc">Our technicians are specifically trained in German and Italian automotive engineering.</p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">Transparency</h3>
+                    <p class="feature-desc">Upfront pricing, detailed estimates, and live updates on your car's progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">HiEnd<span class="text-accent">Cars</span></h3>
+                    <p class="footer-desc">Hyderabad's trusted premium workshop for luxury and premium cars. Unmatched
+                        quality and service.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="insurance-claims.html">Insurance Claims</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hiendcars.in/" aria-label="Instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/hiend.cars" aria-label="Facebook" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HiEndCars, Hyderabad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

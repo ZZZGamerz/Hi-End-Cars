@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HiEndCars - Premium luxury car repair, detailing, denting, painting, and ceramic coating in Hyderabad. Trusted premium workshop.">
+    <title>HiEndCars | Premium Luxury Car Repair & Detailing in Hyderabad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Website Icon-->
+    <link rel="icon" type="image/png" href="Images/car.png">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="HiEndCars Logo"
+                    onerror="this.src=''; this.alt='HiEndCars'; this.className='logo-text';">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+        <div class="parallax-elements">
+            <div class="parallax-blob blob-1"></div>
+            <div class="parallax-blob blob-2"></div>
+            <div class="parallax-blob blob-3"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <img src="Images/hero_bg.webp" alt="Luxury car in premium garage" class="hero-bg" id="hero-bg-img">
+        <div class="hero-content fade-up">
+            <h1 class="hero-title">Revive the <span class="text-accent">Luxury.</span></h1>
+            <p class="hero-subtitle">Hyderabad’s most trusted premium workshop for denting, painting, ceramic coating &
+                accidental repairs.</p>
+            <div class="hero-cta-group">
+                <a href="contact.html" class="btn btn-primary btn-large">Book Now</a>
+                <a href="services.html" class="btn btn-secondary btn-large">Explore Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Cars Serviced</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Google Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Exp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Why Choose HiEndCars (About Preview) -->
+    <section class="why-choose-us section" id="why-us">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Why Choose <span class="text-accent">HiEndCars?</span></h2>
+                <p class="section-subtitle">We prioritize quality over cheap fixes. Your luxury car deserves the best.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Premium Quality</h3>
+                    <p class="feature-desc">We use only top-tier OEM parts and imported paints for a flawless finish.
+                    </p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">On-Time Delivery</h3>
+                    <p class="feature-desc">We respect your time. Transparent timelines with zero unnecessary delays.
+                    </p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-icon">👨‍🔧</div>
+                    <h3 class="feature-title">Expert Technicians</h3>
+                    <p class="feature-desc">Trained specialists handling high-end luxury vehicles daily.</p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="feature-icon">💎</div>
+                    <h3 class="feature-title">State-of-Art Facility</h3>
+                    <p class="feature-desc">Equipped with the latest tools and tech specifically for premium cars.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Section (Overview) -->
+    <section class="services section bg-dark" id="services">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Premium <span class="text-accent">Services</span></h2>
+                <p class="section-subtitle">Comprehensive care for your prized possession.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <img src="Images/service_denting.webp" alt="Denting and Painting" class="service-img"
+                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%231a1a1a\'/></svg>'">
+                    <div class="service-content">
+                        <h3 class="service-title">Denting & Painting</h3>
+                        <p class="service-desc">Factory-finish painting with color matching tech and seamless dent
+                            removal.</p>
+                    </div>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.1s;">
+                    <img src="Images/service_ceramic.webp" alt="Ceramic Coating & PPF" class="service-img"
+                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%231a1a1a\'/></svg>'">
+                    <div class="service-content">
+                        <h3 class="service-title">Ceramic Coating & PPF</h3>
+                        <p class="service-desc">Ultimate gloss and protection against scratches with premium PPF and 9H
+                            ceramic coats.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Workshop <span class="text-accent">Excellence</span></h2>
+                <p class="section-subtitle">A glimpse of the premium care your car receives at HiEndCars.</p>
+            </div>
+            <div class="gallery-grid fade-up">
+                <div class="gallery-card">
+                    <img src="Images/gallery/1.jpg" alt="Workshop Excellence 1" class="gallery-img">
+                    <div class="gallery-overlay"><span class="overlay-text">Quality Service</span></div>
+                </div>
+                <div class="gallery-card">
+                    <img src="Images/gallery/new3.jpg" alt="Workshop Excellence 2" class="gallery-img">
+                    <div class="gallery-overlay"><span class="overlay-text">Pristine Finish</span></div>
+                </div>
+                <div class="gallery-card">
+                    <img src="Images/gallery/new5.jpg" alt="Workshop Excellence 3" class="gallery-img">
+                    <div class="gallery-overlay"><span class="overlay-text">Ceramic Protection</span></div>
+                </div>
+                <div class="gallery-card">
+                    <img src="Images/gallery/15.jpg" alt="Workshop Excellence 4" class="gallery-img">
+                    <div class="gallery-overlay"><span class="overlay-text">Master Craftsmanship</span></div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Brands We Service -->
+    <section class="brands section" id="brands">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Specialized <span class="text-accent">Care</span> For</h2>
+            </div>
+            <div class="services-grid">
+                <a href="bmw-service-hyderabad.html" class="service-card fade-up">
+                    <img src="Images/gallery/13.jpg" alt="BMW Service" class="service-img">
+                    <div class="service-content text-center">
+                        <h3 class="text-accent">BMW</h3>
+                        <p>Expert BMW Repair in Hyderabad</p>
+                    </div>
+                </a>
+                <a href="audi-service-hyderabad.html" class="service-card fade-up" style="transition-delay: 0.1s;">
+                    <img src="Images/gallery/10.jpg" alt="Audi Service" class="service-img">
+                    <div class="service-content text-center">
+                        <h3 class="text-accent">Audi</h3>
+                        <p>Certified Audi Servicing</p>
+                    </div>
+                </a>
+                <a href="mercedes-service-hyderabad.html" class="service-card fade-up" style="transition-delay: 0.2s;">
+                    <img src="Images/gallery/15.jpg" alt="Mercedes Service" class="service-img">
+                    <div class="service-content text-center">
+                        <h3 class="text-accent">Mercedes</h3>
+                        <p>Premium Mercedes-Benz Maintenance</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Luxury Brand Marquee Section -->
+        <section class="brands-marquee-section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Brands We <span class="text-accent">Serve</span></h2>
+                    <p class="section-subtitle">Expert care for world-class engineering.</p>
+                </div>
+            </div>
+            <div class="marquee-container mt-5">
+                <div class="marquee-content">
+                    <span class="brand-logo-item">Rolls Royce</span>
+                    <span class="brand-logo-item">Aston Martin</span>
+                    <span class="brand-logo-item">Lamborghini</span>
+                    <span class="brand-logo-item">Porsche</span>
+                    <span class="brand-logo-item">Bentley</span>
+                    <span class="brand-logo-item">Maserati</span>
+                    <span class="brand-logo-item">Ferrari</span>
+                    <span class="brand-logo-item">BMW</span>
+                    <span class="brand-logo-item">Mini</span>
+                    <span class="brand-logo-item">Audi</span>
+                    <span class="brand-logo-item">Jaguar</span>
+                    <span class="brand-logo-item">Mercedes</span>
+                    <span class="brand-logo-item">Lexus</span>
+                    <span class="brand-logo-item">Volvo</span>
+                    <span class="brand-logo-item">Land Rover</span>
+                    <span class="brand-logo-item">Mitsubishi</span>
+                    <span class="brand-logo-item">Toyota</span>
+                    <span class="brand-logo-item">Volkswagen</span>
+                    <span class="brand-logo-item">Tata</span>
+                    <span class="brand-logo-item">Nissan</span>
+                    <span class="brand-logo-item">Hyundai</span>
+                    <span class="brand-logo-item">Skoda</span>
+                    <span class="brand-logo-item">Maruti Suzuki</span>
+                    <span class="brand-logo-item">Mahindra</span>
+                    <span class="brand-logo-item">Chevrolet</span>
+                    <span class="brand-logo-item">Datsun</span>
+                    <span class="brand-logo-item">Fiat</span>
+                    <span class="brand-logo-item">Ford</span>
+                    <span class="brand-logo-item">Honda</span>
+                    <span class="brand-logo-item">Renault</span>
+                </div>
+                <!-- Duplicated for seamless loop -->
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="brand-logo-item">Rolls Royce</span>
+                    <span class="brand-logo-item">Aston Martin</span>
+                    <span class="brand-logo-item">Lamborghini</span>
+                    <span class="brand-logo-item">Porsche</span>
+                    <span class="brand-logo-item">Bentley</span>
+                    <span class="brand-logo-item">Maserati</span>
+                    <span class="brand-logo-item">Ferrari</span>
+                    <span class="brand-logo-item">BMW</span>
+                    <span class="brand-logo-item">Mini</span>
+                    <span class="brand-logo-item">Audi</span>
+                    <span class="brand-logo-item">Jaguar</span>
+                    <span class="brand-logo-item">Mercedes</span>
+                    <span class="brand-logo-item">Lexus</span>
+                    <span class="brand-logo-item">Volvo</span>
+                    <span class="brand-logo-item">Land Rover</span>
+                    <span class="brand-logo-item">Mitsubishi</span>
+                    <span class="brand-logo-item">Toyota</span>
+                    <span class="brand-logo-item">Volkswagen</span>
+                    <span class="brand-logo-item">Tata</span>
+                    <span class="brand-logo-item">Nissan</span>
+                    <span class="brand-logo-item">Hyundai</span>
+                    <span class="brand-logo-item">Skoda</span>
+                    <span class="brand-logo-item">Maruti Suzuki</span>
+                    <span class="brand-logo-item">Mahindra</span>
+                    <span class="brand-logo-item">Chevrolet</span>
+                    <span class="brand-logo-item">Datsun</span>
+                    <span class="brand-logo-item">Fiat</span>
+                    <span class="brand-logo-item">Ford</span>
+                    <span class="brand-logo-item">Honda</span>
+                    <span class="brand-logo-item">Renault</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Wall Section -->
+        <section class="brand-wall-section">
+            <div class="container">
+                <div class="brand-grid">
+                    <div class="brand-tile fade-up" style="transition-delay: 0.05s;">
+                        <img src="Images/Cars Brand/rollsroyce.png" alt="Rolls Royce"
+                            class="brand-tile-logo logo-light">
+                        <span class="brand-tile-name">Rolls Royce</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.1s;">
+                        <img src="Images/Cars Brand/astonmartin.png" alt="Aston Martin" class="brand-tile-logo">
+                        <span class="brand-tile-name">Aston Martin</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.15s;">
+                        <img src="Images/Cars Brand/lamborghini.png" alt="Lamborghini" class="brand-tile-logo">
+                        <span class="brand-tile-name">Lamborghini</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.2s;">
+                        <img src="Images/Cars Brand/porsche.png" alt="Porsche" class="brand-tile-logo">
+                        <span class="brand-tile-name">Porsche</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.25s;">
+                        <img src="Images/Cars Brand/bentley.png" alt="Bentley" class="brand-tile-logo">
+                        <span class="brand-tile-name">Bentley</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.05s;">
+                        <img src="Images/Cars Brand/maserati.png" alt="Maserati" class="brand-tile-logo logo-light">
+                        <span class="brand-tile-name">Maserati</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.1s;">
+                        <img src="Images/Cars Brand/ferrari.png" alt="Ferrari" class="brand-tile-logo">
+                        <span class="brand-tile-name">Ferrari</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.15s;">
+                        <img src="Images/Cars Brand/bmw.png" alt="BMW" class="brand-tile-logo">
+                        <span class="brand-tile-name">BMW</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.2s;">
+                        <img src="Images/Cars Brand/mini.png" alt="Mini" class="brand-tile-logo">
+                        <span class="brand-tile-name">Mini</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.25s;">
+                        <img src="Images/Cars Brand/audi.png" alt="Audi" class="brand-tile-logo">
+                        <span class="brand-tile-name">Audi</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.05s;">
+                        <img src="Images/Cars Brand/jaguar.png" alt="Jaguar" class="brand-tile-logo">
+                        <span class="brand-tile-name">Jaguar</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.1s;">
+                        <img src="Images/Cars Brand/mercedes.png" alt="Mercedes" class="brand-tile-logo">
+                        <span class="brand-tile-name">Mercedes</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.15s;">
+                        <img src="Images/Cars Brand/lexus.png" alt="Lexus" class="brand-tile-logo">
+                        <span class="brand-tile-name">Lexus</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.2s;">
+                        <img src="Images/Cars Brand/volvo.png" alt="Volvo" class="brand-tile-logo">
+                        <span class="brand-tile-name">Volvo</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.25s;">
+                        <img src="Images/Cars Brand/landrover.png" alt="Land Rover" class="brand-tile-logo">
+                        <span class="brand-tile-name">Land Rover</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.05s;">
+                        <img src="Images/Cars Brand/mitsubishi.png" alt="Mitsubishi" class="brand-tile-logo">
+                        <span class="brand-tile-name">Mitsubishi</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.1s;">
+                        <img src="Images/Cars Brand/toyota.png" alt="Toyota" class="brand-tile-logo">
+                        <span class="brand-tile-name">Toyota</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.15s;">
+                        <img src="Images/Cars Brand/volkwegon.png" alt="Volkswagen" class="brand-tile-logo">
+                        <span class="brand-tile-name">Volkswagen</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.2s;">
+                        <img src="Images/Cars Brand/tata.png" alt="Tata" class="brand-tile-logo logo-light">
+                        <span class="brand-tile-name">Tata</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.25s;">
+                        <img src="Images/Cars Brand/nissan.png" alt="Nissan" class="brand-tile-logo">
+                        <span class="brand-tile-name">Nissan</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.05s;">
+                        <img src="Images/Cars Brand/hyundai.png" alt="Hyundai" class="brand-tile-logo">
+                        <span class="brand-tile-name">Hyundai</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.1s;">
+                        <img src="Images/Cars Brand/skoda.png" alt="Skoda" class="brand-tile-logo">
+                        <span class="brand-tile-name">Skoda</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.15s;">
+                        <img src="Images/Cars Brand/maruti-suzuki.png" alt="Maruti Suzuki" class="brand-tile-logo">
+                        <span class="brand-tile-name">Maruti Suzuki</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.2s;">
+                        <img src="Images/Cars Brand/mahindra.png" alt="Mahindra" class="brand-tile-logo">
+                        <span class="brand-tile-name">Mahindra</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.25s;">
+                        <img src="Images/Cars Brand/chevrolet.png" alt="Chevrolet" class="brand-tile-logo">
+                        <span class="brand-tile-name">Chevrolet</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.05s;">
+                        <img src="Images/Cars Brand/datsun.png" alt="Datsun" class="brand-tile-logo">
+                        <span class="brand-tile-name">Datsun</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.1s;">
+                        <img src="Images/Cars Brand/fiat.png" alt="Fiat" class="brand-tile-logo">
+                        <span class="brand-tile-name">Fiat</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.15s;">
+                        <img src="Images/Cars Brand/ford.png" alt="Ford" class="brand-tile-logo">
+                        <span class="brand-tile-name">Ford</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.2s;">
+                        <img src="Images/Cars Brand/honda.png" alt="Honda" class="brand-tile-logo">
+                        <span class="brand-tile-name">Honda</span>
+                    </div>
+                    <div class="brand-tile fade-up" style="transition-delay: 0.25s;">
+                        <img src="Images/Cars Brand/renault.png" alt="Renault" class="brand-tile-logo">
+                        <span class="brand-tile-name">Renault</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Pickup & Drop Service (Quick CTA) -->
+        <section class="pickup-drop section bg-dark" id="pickup">
+            <div class="container text-center fade-up">
+                <h2 class="section-title">Doorstep <span class="text-accent">Pickup & Drop</span></h2>
+                <p class="section-subtitle max-w-md mx-auto">Too busy? We offer premium flatbed towing and safe driven
+                    pickup across Hyderabad.</p>
+                <div class="pickup-graphic mt-5">
+                    <div class="pulse-ring"></div>
+                    <div class="car-icon">🚗</div>
+                </div>
+                <a href="https://wa.me/8826737007" class="btn btn-secondary mt-5" target="_blank">Schedule Pickup</a>
+            </div>
+        </section>
+
+        <!-- 10. Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <h3 class="footer-logo">HiEnd<span class="text-accent">Cars</span></h3>
+                        <p class="footer-desc">Hyderabad's trusted premium workshop for luxury and premium cars.
+                            Unmatched
+                            quality and service.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="reviews.html">Reviews</a>
+                        <a href="insurance-claims.html">Insurance Claims</a>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/hiendcars.in/" aria-label="Instagram" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/hiend.cars" aria-label="Facebook" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 HiEndCars, Hyderabad. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

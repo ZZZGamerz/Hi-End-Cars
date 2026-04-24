@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact HiEndCars Hyderabad for luxury car repair, servicing, and accidental repairs. Book your appointment online or visit our Jubilee Hills workshop.">
+    <title>Contact Us | HiEndCars - Luxury Car Service Appointment Hyderabad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Website Icon-->
+    <link rel="icon" type="image/png" href="Images/car.png">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="HiEndCars Logo"
+                    onerror="this.src=''; this.alt='HiEndCars'; this.className='logo-text';">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 150px;">
+        <div class="hero-overlay"></div>
+        <img src="Images/hero_bg.webp" alt="Contact Us" class="hero-bg">
+        <div class="hero-content text-center fade-up">
+            <h1 class="hero-title">Contact <span class="text-accent">Us</span></h1>
+            <p class="hero-subtitle">Get a professional estimate or book your service today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section">
+        <div class="container">
+            <div class="contact-wrapper fade-up">
+                <div class="contact-info">
+                    <h2 class="section-title">Reach <span class="text-accent">Out</span></h2>
+                    <p class="contact-desc">Drop by our premium workshop in Jubilee Hills, Hyderabad, or reach out to us
+                        online.</p>
+
+                    <div class="contact-details mt-4">
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Plot no-04, Sahu lane, Ashok Vihar, Phase-2, Gurugram, Haryana, India.</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <span>+91 8826737007<br>+91 9811554229</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">✉️</span>
+                            <span>sudhir@hiendcars.in</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/8826737007" class="btn btn-whatsapp mt-5" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <form class="contact-form glass-card" id="booking-form">
+                    <h3 class="form-title">Book an Appointment</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <select required class="form-input">
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="denting">Denting & Painting</option>
+                            <option value="ceramic">Ceramic Coating / PPF</option>
+                            <option value="accidental">Accidental Repair</option>
+                            <option value="service">General Service</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Car Make & Model (e.g. BMW X5)" required class="form-input">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Request Callback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">HiEnd<span class="text-accent">Cars</span></h3>
+                    <p class="footer-desc">Hyderabad's trusted premium workshop for luxury and premium cars. Unmatched
+                        quality and service.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="insurance-claims.html">Insurance Claims</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hiendcars.in/" aria-label="Instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/hiend.cars" aria-label="Facebook" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HiEndCars, Hyderabad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
