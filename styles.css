@@ -40,6 +40,47 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, transparent, var(--accent), transparent);
+    border-radius: 100px;
+    border: 3px solid var(--bg-dark);
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--accent-hover), var(--accent), var(--accent-hover));
+    box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-dark);
+}
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, var(--accent), #fff, var(--accent));
+    z-index: 10001;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+    transition: width 0.1s ease-out;
+}
+
 html {
     background-color: var(--bg-dark);
 }
@@ -862,8 +903,8 @@ img {
 .brand-grid {
     margin-top: 0 !important;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.2rem;
 }
 
 .brand-tile {
@@ -872,13 +913,13 @@ img {
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    height: 200px;
+    gap: 1rem;
+    height: 140px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -886,7 +927,7 @@ img {
 }
 
 .brand-tile-logo {
-    max-height: 70px;
+    max-height: 45px;
     max-width: 90%;
     object-fit: contain;
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
@@ -899,7 +940,7 @@ img {
 
 .brand-tile-name {
     font-family: var(--font-heading);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -1181,9 +1222,26 @@ img {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+
+    .brand-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
+    .brand-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+
+    .brand-tile {
+        height: 120px;
+        padding: 1rem;
+    }
+
+    .brand-tile-logo {
+        max-height: 35px;
+    }
 
     .nav-links,
     .nav-btn {
@@ -1209,5 +1267,11 @@ img {
 
     .hero-cta-group {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

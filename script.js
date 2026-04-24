@@ -1,12 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Navbar Scroll Effect
+    // 1. Navbar Scroll Effect & Progress Bar
     const navbar = document.querySelector('.navbar');
+    const progressBar = document.querySelector('.scroll-progress');
+
     window.addEventListener('scroll', () => {
+        // Navbar background
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+        }
+
+        // Scroll Progress
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        if (progressBar) {
+            progressBar.style.width = scrolled + "%";
         }
     });
 
