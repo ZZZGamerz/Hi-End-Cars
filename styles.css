@@ -326,7 +326,7 @@ select {
 }
 
 .section-title span.text-accent {
-    text-shadow: 1px 1px 0px #b5952f, 2px 2px 0px #947a26, 3px 3px 0px #735f1d, 4px 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 20px rgba(212, 175, 55, 0.7);
 }
 
 .section-subtitle {
