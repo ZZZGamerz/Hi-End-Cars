@@ -26,6 +26,8 @@
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <canvas id="bg-canvas"></canvas>
 
     <!-- Header & Navigation -->
@@ -43,7 +45,10 @@
                 <a href="reviews.html">Reviews</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <a href="contact.html" class="btn btn-primary nav-btn btn-shuttle">
+                <span>Book Now</span>
+                <div class="shuttle-glow"></div>
+            </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -67,48 +72,72 @@
         </div>
     </section>
 
-    <!-- Detailed Services -->
-    <section class="services section">
+    <!-- 3. Services Grid Section -->
+    <section class="services section bg-dark">
         <div class="container">
             <div class="services-grid">
+                <!-- 1. General Service -->
                 <div class="service-card fade-up">
-                    <img src="Images/service_denting.webp" alt="Denting and Painting" class="service-img">
+                    <img src="Images/service_luxury.webp" alt="General Service" class="service-img">
                     <div class="service-content">
-                        <h3 class="service-title">Denting & Painting</h3>
-                        <p class="service-desc">We use high-grade paints and advanced color-matching technology to ensure your car looks as good as new. Our dent removal process is meticulous and leaves no trace.</p>
+                        <h3 class="service-title">General Service</h3>
+                        <p class="service-desc">Periodic Maintenance through OEM defined service procedures for your car. We ensure your vehicle runs at peak performance.</p>
                     </div>
                 </div>
+                <!-- 2. AC/Heater Service -->
                 <div class="service-card fade-up" style="transition-delay: 0.1s;">
-                    <img src="Images/service_ceramic.webp" alt="Ceramic Coating & PPF" class="service-img">
+                    <img src="Images/gallery/new4.jpg" alt="AC/Heater Service" class="service-img">
                     <div class="service-content">
-                        <h3 class="service-title">Ceramic Coating & PPF</h3>
-                        <p class="service-desc">Protect your investment. Our 9H Ceramic Coating and self-healing Paint Protection Film (PPF) provide ultimate defense against scratches and environmental damage.</p>
+                        <h3 class="service-title">AC/Heater Service</h3>
+                        <p class="service-desc">Customized AC repair packages for your car to put you in control of your car's temperature. Expert diagnostics and recharging.</p>
                     </div>
                 </div>
+                <!-- 3. Car Cleaning -->
+                <div class="service-card fade-up" style="transition-delay: 0.15s;">
+                    <img src="Images/gallery/new6.jpg" alt="Car Cleaning" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Car Cleaning</h3>
+                        <p class="service-desc">Doorstep cleaning services with 3M products done by trained professionals. Deep detailing for that showroom shine.</p>
+                    </div>
+                </div>
+                <!-- 4. Car Wrapping -->
                 <div class="service-card fade-up" style="transition-delay: 0.2s;">
-                    <img src="Images/service_accidental.webp" alt="Accidental Repairs" class="service-img">
+                    <img src="Images/gallery/new3.jpg" alt="Car Wrapping" class="service-img">
                     <div class="service-content">
-                        <h3 class="service-title">Accidental Repairs</h3>
-                        <p class="service-desc">Collision repair requires precision engineering. We restore your car's structural integrity using state-of-the-art chassis alignment and repair technology.</p>
+                        <h3 class="service-title">Car Wrapping</h3>
+                        <p class="service-desc">Give your car a premium look and enhance its aesthetic appeal with HIEND Cars' premium vinyl wrap solutions.</p>
                     </div>
                 </div>
-                <div class="service-card fade-up" style="transition-delay: 0.3s;">
-                    <img src="Images/service_luxury.webp" alt="Luxury Car Servicing" class="service-img">
-                    <div class="service-content">
-                        <h3 class="service-title">Luxury Servicing</h3>
-                        <p class="service-desc">From oil changes to complex electronic diagnostics, we handle all mechanical work for high-end brands like BMW, Mercedes, and Audi.</p>
-                    </div>
-                </div>
+                <!-- 5. Denting Painting -->
                 <div class="service-card fade-up">
-                    <div class="service-content p-5">
-                        <h3 class="service-title text-accent">Interior Detailing</h3>
-                        <p class="service-desc">Deep cleaning, leather restoration, and odor removal to make your cabin feel brand new again.</p>
+                    <img src="Images/service_denting.webp" alt="Denting Painting" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Denting Painting</h3>
+                        <p class="service-desc">Best in class denting and painting job with state of the art paint booths and precise color matching technology.</p>
                     </div>
                 </div>
+                <!-- 6. Custom Repairs -->
                 <div class="service-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="service-content p-5">
-                        <h3 class="service-title text-accent">Engine Diagnostics</h3>
-                        <p class="service-desc">Using advanced computerized tools to identify and fix complex electrical and mechanical faults.</p>
+                    <img src="Images/service_accidental.webp" alt="Custom Repairs" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Custom Repairs</h3>
+                        <p class="service-desc">Suspension, Brakes, Transmission and Engine. We repair everything with genuine parts and expert engineering.</p>
+                    </div>
+                </div>
+                <!-- 7. Wheel Care -->
+                <div class="service-card fade-up" style="transition-delay: 0.15s;">
+                    <img src="Images/gallery/new1.jpg" alt="Wheel Care" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Wheel Care</h3>
+                        <p class="service-desc">New Tyres, wheel alignment and balancing facility available. Improve handling and safety with our specialized wheel care.</p>
+                    </div>
+                </div>
+                <!-- 8. Paint Protection -->
+                <div class="service-card fade-up" style="transition-delay: 0.2s;">
+                    <img src="Images/gallery/new5.jpg" alt="Paint Protection" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Paint Protection</h3>
+                        <p class="service-desc">Advanced Ceramic Coating and PPF to provide the best protection from environmental contaminants and scratches.</p>
                     </div>
                 </div>
             </div>
@@ -143,6 +172,8 @@
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/8826737007" aria-label="WhatsApp" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

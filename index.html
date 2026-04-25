@@ -46,7 +46,10 @@
                 <a href="reviews.html">Reviews</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <a href="contact.html" class="btn btn-primary nav-btn btn-shuttle">
+                <span>Book Now</span>
+                <div class="shuttle-glow"></div>
+            </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -69,10 +72,13 @@
             <p class="hero-subtitle">Hyderabad’s most trusted premium workshop for denting, painting, ceramic coating &
                 accidental repairs.</p>
             <div class="hero-cta-group">
-                <a href="contact.html" class="btn btn-primary btn-large">Book Now</a>
+                <a href="contact.html" class="btn btn-primary btn-large btn-shuttle">
+                    <span>Book Now</span>
+                    <div class="shuttle-glow"></div>
+                </a>
                 <a href="services.html" class="btn btn-secondary btn-large">Explore Services</a>
             </div>
-            <div class="hero-stats">
+            <div class="hero-stats no-tilt">
                 <div class="stat-item">
                     <span class="stat-number">10k+</span>
                     <span class="stat-label">Cars Serviced</span>
@@ -124,39 +130,90 @@
             <div class="text-center mt-5">
                 <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
             </div>
-        </div>
-    </section>
+            <!-- 3. Services Section (Premium Overview) -->
+            <section class="services section" id="services">
+                <div class="container">
+                    <div class="section-header fade-up">
+                        <h2 class="section-title">SERVICES WE <span class="text-accent">OFFER</span></h2>
+                        <p class="section-subtitle">A wide range of services to choose from to provide you with complete
+                            car care solution</p>
+                    </div>
+                    <div class="services-wrapper">
+                        <!-- Left: Car Image -->
+                        <div class="services-visual fade-up">
+                            <div class="car-visual-container">
+                                <img src="Images/hero_bg.webp" alt="Premium Car" class="car-visual-img">
+                            </div>
+                        </div>
 
-    <!-- 3. Services Section (Overview) -->
-    <section class="services section bg-dark" id="services">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Premium <span class="text-accent">Services</span></h2>
-                <p class="section-subtitle">Comprehensive care for your prized possession.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card fade-up">
-                    <img src="Images/service_denting.webp" alt="Denting and Painting" class="service-img"
-                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%231a1a1a\'/></svg>'">
-                    <div class="service-content">
-                        <h3 class="service-title">Denting & Painting</h3>
-                        <p class="service-desc">Factory-finish painting with color matching tech and seamless dent
-                            removal.</p>
+                        <!-- Right: Services Grid -->
+                        <div class="services-list-grid">
+                            <div class="service-item fade-up" style="transition-delay: 0.1s;">
+                                <div class="service-icon-box"><i class="fas fa-tools"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">General Service</h3>
+                                    <p>Periodic Maintenance through OEM defined service procedures for your car.</p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.15s;">
+                                <div class="service-icon-box"><i class="fas fa-snowflake"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">AC/Heater Service</h3>
+                                    <p>Customized AC repair packages for your car to put you in control of your car's
+                                        temperature.</p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.2s;">
+                                <div class="service-icon-box"><i class="fas fa-soap"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">Car Cleaning</h3>
+                                    <p>Doorstep cleaning services with 3M products done by trained professionals.</p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.25s;">
+                                <div class="service-icon-box"><i class="fas fa-brush"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">Car Wrapping</h3>
+                                    <p>Give your car a premium look and enhance its aesthetic appeal with HIEND Cars.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.3s;">
+                                <div class="service-icon-box"><i class="fas fa-fill-drip"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">Denting Painting</h3>
+                                    <p>Best in class denting and painting job with state of the art paint booths.</p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.35s;">
+                                <div class="service-icon-box"><i class="fas fa-cogs"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">Custom Repairs</h3>
+                                    <p>Suspension, Brakes, Transmission and Engine. We repair everything!</p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.4s;">
+                                <div class="service-icon-box"><i class="fas fa-compact-disc"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">Wheel Care</h3>
+                                    <p>New Tyres, wheel alignment and balancing facility available at your doorstep.</p>
+                                </div>
+                            </div>
+                            <div class="service-item fade-up" style="transition-delay: 0.45s;">
+                                <div class="service-icon-box"><i class="fas fa-shield-alt"></i></div>
+                                <div class="service-info">
+                                    <h3 class="service-name">Paint Protection</h3>
+                                    <p>The ceramic layer will provide the best protection from environmental
+                                        contaminants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="services.html" class="btn btn-primary btn-large">View All Services</a>
                     </div>
                 </div>
-                <div class="service-card fade-up" style="transition-delay: 0.1s;">
-                    <img src="Images/service_ceramic.webp" alt="Ceramic Coating & PPF" class="service-img"
-                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%231a1a1a\'/></svg>'">
-                    <div class="service-content">
-                        <h3 class="service-title">Ceramic Coating & PPF</h3>
-                        <p class="service-desc">Ultimate gloss and protection against scratches with premium PPF and 9H
-                            ceramic coats.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <a href="services.html" class="btn btn-primary">View All Services</a>
-            </div>
+            </section>
         </div>
     </section>
 
@@ -180,9 +237,17 @@
                     <img src="Images/gallery/new5.jpg" alt="Workshop Excellence 3" class="gallery-img">
                     <div class="gallery-overlay"><span class="overlay-text">Ceramic Protection</span></div>
                 </div>
-                <div class="gallery-card">
+                <div class="gallery-card fade-up" style="transition-delay: 0.15s;">
                     <img src="Images/gallery/15.jpg" alt="Workshop Excellence 4" class="gallery-img">
                     <div class="gallery-overlay"><span class="overlay-text">Master Craftsmanship</span></div>
+                </div>
+                <div class="gallery-card fade-up" style="transition-delay: 0.2s;">
+                    <img src="Images/gallery/16.jpg" alt="Workshop Excellence 5" class="gallery-img">
+                    <div class="gallery-overlay"><span class="overlay-text">Attention to Detail</span></div>
+                </div>
+                <div class="gallery-card fade-up" style="transition-delay: 0.25s;">
+                    <img src="Images/gallery/new6.jpg" alt="Workshop Excellence 6" class="gallery-img">
+                    <div class="gallery-overlay"><span class="overlay-text">Showroom Shine</span></div>
                 </div>
             </div>
             <div class="text-center mt-5">
@@ -428,7 +493,7 @@
         </section>
 
         <!-- 7. Pickup & Drop Service (Quick CTA) -->
-        <section class="pickup-drop section bg-dark" id="pickup">
+        <section class="pickup-drop section" id="pickup">
             <div class="container text-center fade-up">
                 <h2 class="section-title">Doorstep <span class="text-accent">Pickup & Drop</span></h2>
                 <p class="section-subtitle max-w-md mx-auto">Too busy? We offer premium flatbed towing and safe driven
@@ -437,12 +502,15 @@
                     <div class="pulse-ring"></div>
                     <div class="car-icon">🚗</div>
                 </div>
-                <a href="https://wa.me/8826737007" class="btn btn-secondary mt-5" target="_blank">Schedule Pickup</a>
+                <a href="https://wa.me/8826737007" class="btn btn-secondary btn-shuttle mt-5" target="_blank">
+                    <span>Schedule Pickup</span>
+                    <div class="shuttle-glow"></div>
+                </a>
             </div>
         </section>
 
         <!-- 10. Footer -->
-        <footer class="footer">
+        <footer class="footer" style="padding-bottom: 1rem;">
             <div class="container">
                 <div class="footer-top">
                     <div class="footer-brand">
@@ -470,6 +538,8 @@
                                     class="fa-brands fa-facebook"></i></a>
                             <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
                                     class="fa-brands fa-youtube"></i></a>
+                            <a href="https://wa.me/8826737007" aria-label="WhatsApp" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>

@@ -26,6 +26,8 @@
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <canvas id="bg-canvas"></canvas>
 
     <!-- Header & Navigation -->
@@ -43,7 +45,10 @@
                 <a href="reviews.html">Reviews</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            <a href="contact.html" class="btn btn-primary nav-btn btn-shuttle">
+                <span>Book Now</span>
+                <div class="shuttle-glow"></div>
+            </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -86,12 +91,13 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/8826737007" class="btn btn-whatsapp mt-5" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    <a href="https://wa.me/8826737007" class="btn btn-whatsapp btn-shuttle mt-5" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> <span>Chat on WhatsApp</span>
+                        <div class="shuttle-glow"></div>
                     </a>
                 </div>
 
-                <form class="contact-form glass-card" id="booking-form">
+                <form class="contact-form glass-card no-tilt" id="booking-form">
                     <h3 class="form-title">Book an Appointment</h3>
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" required class="form-input">
@@ -111,7 +117,10 @@
                     <div class="form-group">
                         <input type="text" placeholder="Car Make & Model (e.g. BMW X5)" required class="form-input">
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Request Callback</button>
+                    <button type="submit" class="btn btn-primary btn-shuttle w-100">
+                        <span>Request Callback</span>
+                        <div class="shuttle-glow"></div>
+                    </button>
                 </form>
             </div>
         </div>
@@ -145,6 +154,8 @@
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/8826737007" aria-label="WhatsApp" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

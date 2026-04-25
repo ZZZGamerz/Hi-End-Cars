@@ -46,12 +46,22 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+                    // Add a tiny delay to allow the CSS to pick up the change
+                    setTimeout(() => {
+                        entry.target.style.transform = 'perspective(1000px) rotateX(0) translateY(0)';
+                        entry.target.style.opacity = '1';
+                    }, 50);
                     observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
         
-        fadeElements.forEach(el => observer.observe(el));
+        fadeElements.forEach(el => {
+            el.style.transform = 'perspective(1000px) rotateX(-15deg) translateY(30px)';
+            el.style.opacity = '0';
+            el.style.transition = 'transform 0.8s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.8s ease-out';
+            observer.observe(el);
+        });
     }
 
     // 4. Before/After Gallery Slider
@@ -107,7 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const speed = (index + 1) * 30; // Different speeds for depth
             const xOffset = (x - 0.5) * speed;
             const yOffset = (y - 0.5) * speed;
-            blob.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+            const zOffset = index * 20; // Simulated depth
+            blob.style.transform = `translate3d(${xOffset}px, ${yOffset}px, ${zOffset}px)`;
         });
         
         // Subtle parallax for hero text
@@ -234,6 +245,54 @@ document.addEventListener('DOMContentLoaded', () => {
             tile.style.transform = 'translate3d(0, 0, 0) scale(1)';
             tile.style.boxShadow = '';
             tile.style.zIndex = '1';
+        });
+    });
+
+    // 9. Generic 3D Tilt Effect for Cards & Hero Elements (Anti-Glitch Version)
+    const tiltElements = document.querySelectorAll('.service-card, .feature-card, .founder-card, .hero-content, .hero-stats:not(.no-tilt), .glass-card:not(.no-tilt)');
+    
+    tiltElements.forEach(el => {
+        el.addEventListener('mousemove', (e) => {
+            const rect = el.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const divisor = el.classList.contains('hero-content') ? 40 : 15;
+            
+            const rotateX = (centerY - y) / divisor;
+            const rotateY = (x - centerX) / divisor;
+            
+            // Use a very fast transition to smooth out the jitter at the edges
+            el.style.transition = 'transform 0.1s ease-out, box-shadow 0.2s ease';
+            el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) ${el.classList.contains('hero-content') ? '' : 'scale(1.02)'}`;
+        });
+        
+        el.addEventListener('mouseleave', () => {
+            el.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s ease';
+            el.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        });
+    });
+    // 10. Huly-style Magnetic Shuttle Animation
+    const shuttleBtns = document.querySelectorAll('.btn-shuttle');
+    
+    shuttleBtns.forEach(btn => {
+        const glow = btn.querySelector('.shuttle-glow');
+        
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Move the glow shuttle to track the mouse
+            glow.style.transform = `translate(${x - 50}px, ${y - 50}px)`;
+            glow.style.opacity = '1';
+        });
+        
+        btn.addEventListener('mouseleave', () => {
+            glow.style.opacity = '0';
         });
     });
 });
