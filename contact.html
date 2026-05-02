@@ -26,8 +26,7 @@
 </head>
 
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
+
     <canvas id="bg-canvas"></canvas>
 
     <!-- Header & Navigation -->
@@ -43,6 +42,7 @@
                 <a href="services.html">Services</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="reviews.html">Reviews</a>
+                <a href="blogs.html" class="active">Blogs</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <a href="contact.html" class="btn btn-primary nav-btn btn-shuttle">
@@ -54,6 +54,13 @@
                 <span></span>
                 <span></span>
             </button>
+        </div>
+
+        <!-- Scroll Progress -->
+        <div class="scroll-progress-container">
+            <div class="scroll-progress">
+                <div class="scroll-car"><i class="fa-solid fa-car-side"></i></div>
+            </div>
         </div>
     </header>
 
@@ -106,16 +113,33 @@
                         <input type="tel" placeholder="Phone Number" required class="form-input">
                     </div>
                     <div class="form-group">
-                        <select required class="form-input">
+                        <select required class="form-input" id="service-select">
                             <option value="" disabled selected>Select Service</option>
+                            <option value="BASIC">Basic Plan</option>
+                            <option value="STANDARD">Standard Plan</option>
+                            <option value="COMPREHENSIVE">Comprehensive Plan</option>
+                            <option value="Interior Cleaning">Interior Cleaning</option>
+                            <option value="Exterior cleaning">Exterior Cleaning</option>
+                            <option value="Paint protection">Paint Protection</option>
+                            <option value="TYRE ROTATION">Tyre Rotation</option>
+                            <option value="WHEEL ALIGNMENT">Wheel Alignment</option>
+                            <option value="WHEEL BALANCING">Wheel Balancing</option>
                             <option value="denting">Denting & Painting</option>
                             <option value="ceramic">Ceramic Coating / PPF</option>
                             <option value="accidental">Accidental Repair</option>
                             <option value="service">General Service</option>
                         </select>
                     </div>
+                    <div class="service-cloud" id="service-cloud"></div>
                     <div class="form-group">
-                        <input type="text" placeholder="Car Make & Model (e.g. BMW X5)" required class="form-input">
+                        <select required class="form-input" id="brand-select">
+                            <option value="" disabled selected>Select Brand</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select required class="form-input" id="model-select" disabled>
+                            <option value="" disabled selected>Select Model</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary btn-shuttle w-100">
                         <span>Request Callback</span>

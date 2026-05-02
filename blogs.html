@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blogs | Hi End Cars - Premium Luxury Car Service</title>
+    <meta name="description" content="Read our latest insights on luxury car repair, maintenance tips, and automotive performance upgrades.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/car.png">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="HiEndCars Logo"
+                    onerror="this.src=''; this.alt='HiEndCars'; this.className='logo-text';">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="blogs.html" class="active">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn btn-shuttle">
+                <span>Book Now</span>
+                <div class="shuttle-glow"></div>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    
+        <!-- Scroll Progress -->
+        <div class="scroll-progress-container">
+            <div class="scroll-progress">
+                <div class="scroll-car"><i class="fa-solid fa-car-side"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 150px;">
+        <div class="hero-overlay"></div>
+        <img src="Images/hero_bg.webp" alt="Our Blogs" class="hero-bg">
+        <div class="hero-content text-center fade-up">
+            <h1 class="hero-title">Our <span class="text-accent">Blogs</span></h1>
+            <p class="hero-subtitle">Expert insights and maintenance guides for your premium vehicles.</p>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="blogs section">
+        <div class="container">
+            <div class="blog-grid fade-up">
+                <!-- Blog 1 -->
+                <div class="blog-card glass-card" data-blog-id="1">
+                    <img src="Images/Blogs/Blog1.jpg" alt="Best Car Repairing Center" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">BEST CAR REPAIRING CENTER | HI END CARS</h3>
+                        <p class="blog-excerpt">Now a days to find best car repairing center in NCR, Gurgaon, (India) to very difficult but Vehicle...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="blog-card glass-card" data-blog-id="2">
+                    <img src="Images/Blogs/Blog2.jpg" alt="Car Servicing Tips" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">CAR SERVICING: BEST CAR MAINTENANCE| HI END CARS</h3>
+                        <p class="blog-excerpt">Men treat their cars as precious as their girl friends. They do a lot of upgrades and accessories just to make...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="blog-card glass-card" data-blog-id="3">
+                    <img src="Images/Blogs/Blog3.jpg" alt="Regular Car Services" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">WHY REGULAR CAR SERVICES IS MUST?| HI END CARS</h3>
+                        <p class="blog-excerpt">Over the recent decades, the car has become a very important part of our lives, and we depend on it more and more everyday...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 4 -->
+                <div class="blog-card glass-card" data-blog-id="4">
+                    <img src="Images/Blogs/Blog4.jpg" alt="Car Repair Guidelines" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">CAR REPAIR SOME BASIC GUIDELINES | HI END CARS</h3>
+                        <p class="blog-excerpt">Generally, a car undergoes some kind of repair quite a few times during its lifetime. What do you do if something happens...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 5 -->
+                <div class="blog-card glass-card" data-blog-id="5">
+                    <img src="Images/Blogs/Blog5.jpg" alt="Performance Boost" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">GIVE YOUR CAR PERFORMANCE A BOOST | HI END CARS</h3>
+                        <p class="blog-excerpt">Is the current engine in your car not giving you the performance you want or need? Are you looking to upgrade your...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 6 -->
+                <div class="blog-card glass-card" data-blog-id="6">
+                    <img src="Images/Blogs/Blog6.jpg" alt="Car Repair Costs" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">CAR REPAIR COSTS-THREE EASY TIPS | HI END CARS</h3>
+                        <p class="blog-excerpt">Own a car and it's going to cost you money, unfortunately it's as simple as that. In addition to the cost of loan payments, insurance...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 7 -->
+                <div class="blog-card glass-card" data-blog-id="7">
+                    <img src="Images/Blogs/Blog7.jpg" alt="Maintenance Tips" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">4 PREVENTATIVE MAINTENANCE TIPS | HI END CARS</h3>
+                        <p class="blog-excerpt">Keep it clean: Your engine does a lot for your vehicle. In fact, without it, your car wouldn't be very far at all, so it's important...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 8 -->
+                <div class="blog-card glass-card" data-blog-id="8">
+                    <img src="Images/Blogs/Blog8.jpg" alt="Choosing Mechanic" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">CHOOSING THE BEST MECHANIC FOR OUR MAINTENANCE | HI END CARS</h3>
+                        <p class="blog-excerpt">License and certification: Many people love cars, are passionate about engines, and will offer to fix your vehicle for a bargain price...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 9 -->
+                <div class="blog-card glass-card" data-blog-id="9">
+                    <img src="Images/Blogs/Blog9.jpg" alt="Repair Insurance" class="blog-img">
+                    <div class="blog-content" style="padding: 1.5rem;">
+                        <h3 class="blog-title">DO I NEED CAR REPAIR INSURANCE FOR USED CARS | HI END CARS</h3>
+                        <p class="blog-excerpt">Stretching the shot helps in securing your money and vehicle. With lower costs you can be guaranteed all the more effectively...</p>
+                        <div class="blog-footer">
+                            <a href="javascript:void(0)" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Popup Structure -->
+    <div class="blog-modal-overlay" id="blog-modal">
+        <div class="blog-modal-container glass-card no-tilt">
+            <button class="modal-close" id="close-blog-modal">&times;</button>
+            <div class="modal-scroll-area">
+                <img src="" alt="" class="modal-hero-img" id="modal-img">
+                <div class="modal-body">
+                    <h2 class="modal-title" id="modal-title"></h2>
+                    <div class="modal-text" id="modal-content"></div>
+                    <div class="modal-cta">
+                        <p class="text-muted">Looking for professional care for your vehicle?</p>
+                        <a href="contact.html" class="btn btn-primary btn-shuttle">
+                            <span>Book an Appointment</span>
+                            <div class="shuttle-glow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">HiEnd<span class="text-accent">Cars</span></h3>
+                    <p class="footer-desc">Hyderabad's trusted premium workshop for luxury and premium cars. Unmatched quality and service.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hiendcars.in/" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/hiend.cars" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@hiendcars3799" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/8826737007" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HiEndCars, Hyderabad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
